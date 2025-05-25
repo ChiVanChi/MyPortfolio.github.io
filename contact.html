@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+
+<html lang="ru"> 
+<head> 
+    <meta charset="utf-8"/> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Контакты</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Шрифт */
+            margin: 0; /* Убираем отступы */
+            padding: 0; /* Убираем отступы */
+            background-color: #212121; /* Цвет фона страницы */
+            color: #333; /* Цвет текста */
+        }
+
+        #main-content {
+            max-width: 600px; /* Максимальная ширина блока */
+            margin: 50px auto; /* Центрируем блок по горизонтали */
+            padding: 20px; /* Отступы внутри блока */
+            background-color: rgb(255, 255, 255); /* Цвет фона блока */
+            border-radius: 8px; /* Скругление углов блока */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень вокруг блока */
+        }
+
+        h3 {
+            text-align: center; /* Выравнивание заголовка по центру */
+            color: #503f2c; /* Цвет заголовка */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        p {
+            line-height: 1.6; /* Высота строки */
+            margin: 10px 0; /* Отступы сверху и снизу */
+            font-size: 18px; /* Размер шрифта */
+        }
+
+        /* Стили для ссылок */
+        a {
+            color: #683f1d; /* Цвет ссылок */
+            text-decoration: none; /* Убираем подчеркивание */
+            transition: color 0.3s; /* Плавный переход цвета */
+        }
+
+        a:hover {
+            color: #683f1d; /* Цвет ссылок при наведении */
+        }
+
+        /* Новый стиль для текстового блока */
+        .contact-email {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f1f1f1; /* Цвет фона блока с почтой */
+            border-radius: 5px; /* Скругление углов блока */
+            text-align: center; /* Выравнивание текста по центру */
+            font-size: 18px; /* Размер шрифта в блоке */
+        }
+    </style>
+</head> 
+<body>
+    <section id="main-content"> 
+        <div id="featured"> 
+            <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Отправить">
+            </form>
+    <!-- Блок с почтой для связи -->
+    <div class="contact-email">
+        Почта для связи со мной: ivanceprasov825@mail.ru
+    </div>
+</div> 
+</section> 
+</body>
+</html>
+
+
+</body>
+</html>
